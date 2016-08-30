@@ -1,0 +1,24 @@
+ 1) implement proper type handling
+ 2) add the alloc/mark/free trinity to generated output
+ 3) add util.h include to generated output
+ 4) make sure generated output has proper error checking when converting types
+ 5) write a front end that will accept c source and generate suitable data for back end.
+ 6) make the front end handle
+	6.1) typedefs
+	6.2) enums 
+	6.3) constants
+	6.4) nested structures/unions
+	6.5) unnested unions/structures
+	6.6) strings both statically allocated and dynamically allocated.
+	6.7) generation of wapper code to invoke ruby procs as c callbacks
+	6.8) comments should be passed through where possible
+
+ 7) generate extconf.rb
+ 8) generate build.sh
+ 9) add prototypes to generated output prior to first function implementation.
+10) Comment all function with usual function headers blocks
+11) Ensure all function return values are checked
+12) Enable some form of error recovery, ala setjmp/longjmp
+13) Enable parser tables to be loaded from a configuration file.
+14) Add command line arguments to allow verbose debugging
+15) Add logging.
